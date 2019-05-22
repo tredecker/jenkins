@@ -15,4 +15,4 @@ services:
     networks:
       - jenkinsnet
 networks:
-  jenkinsnet:
+    jenkinsnet:
