@@ -12,3 +12,7 @@ services:
       - "/Users/tom/Documents/Jenkins:/var/jenkins_home"
       
       # -e "DOCKER_GID_ON_HOST=$(cat /etc/group | grep docker: | cut -d: -f3)" oose/dockerjenkins
+    networks:
+      - jenkinsnet
+networks:
+  jenkinsnet:
