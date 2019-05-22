@@ -16,3 +16,4 @@ services:
       - jenkinsnet
 networks:
     jenkinsnet:
+    
