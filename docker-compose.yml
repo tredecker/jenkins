@@ -1,11 +1,12 @@
 version: "3"
+
 services:
   jenkins:
     image: jenkinsci/blueocean
     ports:
       - "8080:8080"
       - "50000:50000"
-    mapping:
+    volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
       - "/usr/bin/docker:/usr/bin/docker"
       - "/var/lib/jenkins_home:/var/jenkins_home"
